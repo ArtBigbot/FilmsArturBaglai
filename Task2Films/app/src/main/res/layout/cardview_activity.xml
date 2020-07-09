@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:context=".CardViewActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:text="Title:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/titleCard1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="731dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp">
+        </androidx.cardview.widget.CardView>
+        <TextView
+                android:text="Year:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearCard1" app:layout_constraintEnd_toStartOf="@+id/yearCard2"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.043" android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/titleCard1"/>
+        <TextView
+                android:text="Runtime:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/runtimeCard1"
+                app:layout_constraintTop_toBottomOf="@+id/yearCard1" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="12dp" android:layout_marginStart="12dp" android:layout_marginTop="24dp"/>
+        <TextView
+                android:text="Genre:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/genreCard1"
+                app:layout_constraintTop_toBottomOf="@+id/runtimeCard1" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/genreCard2" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" android:layout_marginTop="36dp"
+                app:layout_constraintHorizontal_bias="0.022"/>
+        <TextView
+                android:text="Director:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/directorCard1"
+                app:layout_constraintTop_toBottomOf="@+id/genreCard1" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/directorCard2" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" android:layout_marginTop="40dp"
+                app:layout_constraintHorizontal_bias="0.006"/>
+        <TextView
+                android:text="Whriter:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/writerCard1" app:layout_constraintEnd_toStartOf="@+id/writerCard2"
+                android:layout_marginEnd="160dp" android:layout_marginRight="160dp"
+                app:layout_constraintTop_toBottomOf="@+id/directorCard1" android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="Actors:"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/actorsCard1" app:layout_constraintEnd_toStartOf="@+id/actorsCard2"
+                android:layout_marginEnd="168dp" android:layout_marginRight="168dp"
+                app:layout_constraintTop_toBottomOf="@+id/writerCard1" android:layout_marginTop="36dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="Plot:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plotCard1" app:layout_constraintEnd_toStartOf="@+id/plotCard2"
+                android:layout_marginEnd="172dp" android:layout_marginRight="172dp"
+                app:layout_constraintTop_toBottomOf="@+id/actorsCard1" android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.2"/>
+        <TextView
+                android:text="Language:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/languageCard1" app:layout_constraintEnd_toStartOf="@+id/languageCard2"
+                android:layout_marginEnd="140dp" android:layout_marginRight="140dp" android:layout_marginTop="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/plotCard1" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="Country:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countryCard1" app:layout_constraintEnd_toStartOf="@+id/countryCard2"
+                android:layout_marginEnd="156dp" android:layout_marginRight="156dp"
+                app:layout_constraintTop_toBottomOf="@+id/languageCard1" android:layout_marginTop="36dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+        <TextView
+                android:text="Awards:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/awardsCard1" app:layout_constraintEnd_toStartOf="@+id/awardsCard2"
+                android:layout_marginEnd="164dp" android:layout_marginRight="164dp"
+                app:layout_constraintTop_toBottomOf="@+id/countryCard1" android:layout_marginTop="52dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="165dp"
+                android:layout_height="38dp"
+                android:id="@+id/titleCard2" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/titleCard1"
+                android:layout_marginLeft="172dp" android:layout_marginStart="172dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearCard2" android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/titleCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="124dp" android:layout_marginRight="124dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/runtimeCard2" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/yearCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="124dp" android:layout_marginRight="124dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="183dp"
+                android:layout_height="32dp"
+                android:id="@+id/genreCard2" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/runtimeCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="160dp"
+                android:layout_height="41dp"
+                android:id="@+id/directorCard2" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/genreCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp" android:layout_marginRight="32dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="159dp"
+                android:layout_height="37dp"
+                android:id="@+id/writerCard2" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/directorCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="164dp"
+                android:layout_height="37dp"
+                android:id="@+id/actorsCard2" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/writerCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp" android:layout_marginRight="24dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="164dp"
+                android:layout_height="35dp"
+                android:id="@+id/plotCard2" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/actorsCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp" android:layout_marginRight="24dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="166dp"
+                android:layout_height="31dp"
+                android:id="@+id/languageCard2" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/plotCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp" android:layout_marginRight="24dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="162dp"
+                android:layout_height="34dp"
+                android:id="@+id/countryCard2" android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/languageCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="153dp"
+                android:layout_height="71dp"
+                android:id="@+id/awardsCard2" android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/countryCard2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp" android:layout_marginRight="32dp"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" android:id="@+id/guideline"
+                                                    app:layout_constraintGuide_begin="20dp"
+                                                    android:orientation="vertical"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" android:id="@+id/guideline2"
+                                                    app:layout_constraintGuide_begin="20dp"
+                                                    android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content" android:id="@+id/barrier"
+                                                  app:barrierDirection="left"/>
+        <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content" android:id="@+id/barrier2"
+                                                  app:barrierDirection="top"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
